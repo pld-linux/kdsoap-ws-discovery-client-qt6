@@ -44,6 +44,8 @@ Requires:	kde-common-dirs >= 0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+This project is trying to create a WS-Discovery client library based on the KDSoap
+library. It uses modern C++ 11 and Qt 5.
 
 %package devel
 Summary:	Header files for %{name} library
@@ -87,6 +89,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README.md
 %ghost %{_libdir}/libKDSoapWSDiscoveryClient.so.0
 %attr(755,root,root) %{_libdir}/libKDSoapWSDiscoveryClient.so.*.*
 
