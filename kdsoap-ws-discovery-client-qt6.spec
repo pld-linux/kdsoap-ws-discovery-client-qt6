@@ -5,7 +5,8 @@
 %define		qt6_ver		6.6.1
 %define		kfname	kdsoap-ws-discovery-client
 
-Summary:	kdsoap ws discovery client
+Summary:	KDsoap ws discovery client
+Summary(pl.UTF-8):	Klient WS-Discovery dla biblioteki KDsoap
 Name:		kdsoap-ws-discovery-client-qt6
 Version:	0.3.0
 Release:	1
@@ -44,8 +45,14 @@ Requires:	kde-common-dirs >= 0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This project is trying to create a WS-Discovery client library based on the KDSoap
-library. It uses modern C++ 11 and Qt 5.
+This project is trying to create a WS-Discovery (Web Services Dynamic
+Discovery) client library based on the KDSoap library. It uses modern
+C++ 11 and Qt 5.
+
+%description -l pl.UTF-8
+Ten projekt próbuje utworzyć bibliotekę klienta WS-Discovery (Web
+Services Dynamic Discovery) opartą na bibliotece KDSoap. Używa
+nowoczesnego C++ 11 i Qt 5.
 
 %package devel
 Summary:	Header files for %{name} library
